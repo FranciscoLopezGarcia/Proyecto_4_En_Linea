@@ -1,5 +1,5 @@
-import unittest
 from Back import *
+
 class Juego():
     def __init__(self):
         self.fin = False
@@ -35,7 +35,7 @@ class Juego():
                 except:
                     print(f"Error, poner un valor en rango")
 
-            self.fin = self.uwu.check_winner()
+            self.fin = self.uwu.check_winner() 
         
         self.printTablero()
         print(f"Fin del juego, {self.fin} es el ganador")
@@ -43,6 +43,7 @@ class Juego():
 if __name__ == '__main__':
     mar = Juego()
     mar.play()
+
 
 
 
